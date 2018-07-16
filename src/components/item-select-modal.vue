@@ -54,7 +54,7 @@ export default {
         };
     },
     watch: {
-        selectedJobId (val)  {
+        selectedJobId (val) {
             if (val === '') {
                 this.selectedPartsId = '';
             } else {
@@ -114,5 +114,3 @@ export default {
     }
 };
 </script>
-
-

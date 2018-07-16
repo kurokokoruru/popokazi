@@ -11,7 +11,6 @@ import Information from './components/information.vue';
 import WorkSpace from './components/work-space.vue';
 import { mapGetters } from 'vuex';
 
-
 export default {
     name: 'app',
     components: {
@@ -22,7 +21,7 @@ export default {
     computed: {
         ...mapGetters({
             'itemSelect': 'isItemSelectModalOpen'
-        }),
+        })
     }
 };
 </script>

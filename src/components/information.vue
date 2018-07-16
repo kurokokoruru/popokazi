@@ -37,23 +37,23 @@
                     </li>
                     <li class="hutuu">
                         <div class="name">ふつう</div>
-                        <div class="values" v-text="normalValues"></div>    
+                        <div class="values" v-text="normalValues"></div>
                     </li>
                     <li class="ittenni">
                         <div class="name">1.2倍</div>
-                        <div class="values" v-text="strongValues"></div>    
+                        <div class="values" v-text="strongValues"></div>
                     </li>
                     <li class="nibai">
                         <div class="name">2倍</div>
-                        <div class="values" v-text="twoValues"></div>    
+                        <div class="values" v-text="twoValues"></div>
                     </li>
                     <li class="neppu">
                         <div class="name">熱風おろし</div>
-                        <div class="values" v-text="neppuValues"></div>    
+                        <div class="values" v-text="neppuValues"></div>
                     </li>
                     <li class="sanbai">
                         <div class="name">3倍</div>
-                        <div class="values" v-text="threeValues"></div>    
+                        <div class="values" v-text="threeValues"></div>
                     </li>
                 </ul>
             </div>

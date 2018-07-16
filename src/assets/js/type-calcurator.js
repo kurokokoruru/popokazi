@@ -18,14 +18,14 @@ export default {
             return 'type-hanma';
         }
         case '0-2':
-        case '2-0':{
+        case '2-0': {
             return 'type-tanken';
         }
         case '0-1':
-        case '1-3':{
+        case '1-3': {
             return 'type-ryouteken';
         }
-        case '2-3':{
+        case '2-3': {
             return 'type-kazihanma';
         }
         case '0-5':

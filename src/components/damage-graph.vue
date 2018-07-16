@@ -1,6 +1,6 @@
 <template>
     <div class="damage-graph">
-        <damage-graph-base 
+        <damage-graph-base
             ref="base"
             :in="rangeIn"
             :out="rangeOut"
@@ -54,7 +54,7 @@ export default {
                 if (!val.data || !val.data[this.column]) {
                     return;
                 }
-                
+
                 const range = val.data[this.column][this.row - 1];
 
                 if (!range) {
@@ -74,4 +74,3 @@ export default {
     }
 };
 </script>
-

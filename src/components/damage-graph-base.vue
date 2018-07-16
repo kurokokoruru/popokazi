@@ -1,7 +1,7 @@
 <template>
     <svg width="100%" height="60px">
         <!-- base -->
-        <rect ref="base" 
+        <rect ref="base"
             :x="base.x"
             :y="base.y"
             :width="base.width"
@@ -88,7 +88,7 @@ export default {
             'strongRange': 'strongRange',
             'twoRange': 'twoRange',
             'neppuRange': 'neppuRange',
-            'threeRange': 'threeRange',
+            'threeRange': 'threeRange'
         }),
         base () {
             return {x: 0, y: 0, height: this.graphHeight, width: this.graphWidth};
@@ -141,11 +141,11 @@ export default {
             return this.graphWidth / this.max;
         },
         max () {
-            return (this.in + this.out) / 2  * 1.25;
+            return (this.in + this.out) / 2 * 1.25;
         }
     },
     methods: {
-        calcArea (range, y, height){
+        calcArea (range, y, height) {
             const xVal = this.calcX(range.min);
             const xWidth = this.calcWidth(range.max, xVal);
             return {'x': xVal, 'y': y, 'height': height, 'width': xWidth};

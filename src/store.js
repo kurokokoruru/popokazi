@@ -28,7 +28,7 @@ export default new Vuex.Store({
         updateBaihanMode (state, val) {
             state.baihanMode = val;
         },
-        updateItemSelectModal(state, val) {
+        updateItemSelectModal (state, val) {
             state.modal.itemSelect = val;
         },
         updateItem (state, val) {
@@ -47,7 +47,7 @@ export default new Vuex.Store({
         },
         resetTemperature ({ commit }) {
             commit('resetTemperature');
-        }, 
+        },
         updateBaihanMode ({ commit }, baihanMode) {
             commit('updateBaihanMode', baihanMode);
         },
@@ -60,10 +60,10 @@ export default new Vuex.Store({
         clearItem ({ commit }) {
             commit('updateItem', {});
         },
-        setItem({ commit }, item) {
+        setItem ({ commit }, item) {
             commit('updateItem', item);
         },
-        updateCreateCount( {commit} ) {
+        updateCreateCount ({ commit }) {
             commit('updateCreateCount');
         }
     },
