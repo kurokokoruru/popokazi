@@ -1,0 +1,42 @@
+$button-base-color: #c13a1e;
+$button-border-color: darken($button-base-color, 10%);
+
+.button-area {
+
+}
+
+.button-line {
+    display: flex;
+    justify-content: space-around;
+    
+    .button {
+        flex: 1 1 auto;
+    }
+}
+
+.button {
+    border: 1px solid $button-border-color;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #aab050;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    background-color: $button-base-color;
+    background-image: linear-gradient(lighten($button-base-color, 20%),darken($button-base-color, 20%));
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #4b2200;
+    background-clip: padding-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    &:hover {
+        background: darken(#d27b0b, 10%)
+    }
+    &:active {
+        background: darken(#d27b0b, 20%)
+    }
+    &:disabled {
+        opacity: 0.4;
+    }
+}

@@ -1,0 +1,34 @@
+@import 'reset.scss';
+@import 'def.scss';
+@import 'info-wrapper.scss';
+@import 'radio.scss';
+@import 'button.scss';
+@import 'modal.scss';
+@import 'item-select-modal.scss';
+@import 'workspace.scss';
+@import 'damage-graph';
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans CJK JP Regular"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+}
+
+body {
+    background-color: $base-color;
+    font-size: 11px;
+    font-family: 'Noto Sans JP';
+    color: $font-main-color;
+}
+
+@media screen and (min-width:600px) {
+    body {
+        margin-right: auto;
+        margin-left: auto;
+        width: 720px;
+    }
+}
