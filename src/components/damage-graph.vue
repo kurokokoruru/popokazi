@@ -9,16 +9,20 @@
             :damage="damage">
         </damage-graph-base>
         <div class="input-area">
-            <input type="number" v-model.number="damage" pattern="\d*" @focus="$event.target.select()">
-            <button @click.prevent="addDamage(1)">+1</button>
-            <button @click.prevent="addDamage(5)">+5</button>
-            <button @click.prevent="addDamage(10)">+10</button>
-            <button @click.prevent="addDamage(-10)">-10</button>
-            <button @click.prevent="addDamage(-5)">-5</button>
-            <button @click.prevent="addDamage(-1)">-1</button>
-        </div>
-        <div class="range-display">
-            {{rangeIn}}〜{{rangeOut}}
+            <input class="damage-input" type="number" v-model.number="damage" pattern="\d*" @focus="$event.target.select()">
+            <div class="range-display">
+                {{rangeIn}}〜{{rangeOut}}
+            </div>
+            <div>
+              <button class="button" @click.prevent="addDamage(1)">+1</button>
+              <button class="button"  @click.prevent="addDamage(5)">+5</button>
+              <button class="button"  @click.prevent="addDamage(10)">+10</button>
+            </div>
+            <div>
+              <button class="button"  @click.prevent="addDamage(-1)">-1</button>
+              <button class="button"  @click.prevent="addDamage(-5)">-5</button>
+              <button class="button"  @click.prevent="addDamage(-10)">-10</button>
+            </div>
         </div>
     </div>
 </template>

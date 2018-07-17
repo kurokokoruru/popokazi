@@ -1,4 +1,30 @@
 .damage-graph {
     display: flex;
     flex-direction: column;
+
+    .button {
+      font-size: 11px;
+      width: 48px;
+      margin: 2px;
+      padding: 2px;
+    }
+
+    .range-display {
+      text-align: end;
+      font-size: 18px;
+      color: $content-color;
+      margin: 4px;
+      margin-right: 32px;
+    }
+
+    .button + .button {
+      margin-bottom: 8px
+    }
+
+    .damage-input {
+      font-size: 18px;
+      width: 80%;
+      text-align: right;
+      margin: 4px;
+    }
 }
