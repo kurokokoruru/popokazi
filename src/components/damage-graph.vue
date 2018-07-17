@@ -10,6 +10,12 @@
         </damage-graph-base>
         <div class="input-area">
             <input type="number" v-model.number="damage" pattern="\d*" @focus="$event.target.select()">
+            <button @click.prevent="addDamage(1)">+1</button>
+            <button @click.prevent="addDamage(5)">+5</button>
+            <button @click.prevent="addDamage(10)">+10</button>
+            <button @click.prevent="addDamage(-10)">-10</button>
+            <button @click.prevent="addDamage(-5)">-5</button>
+            <button @click.prevent="addDamage(-1)">-1</button>
         </div>
         <div class="range-display">
             {{rangeIn}}〜{{rangeOut}}
@@ -47,6 +53,11 @@ export default {
             'item': 'selectedItem',
             'createCount': 'createCount'
         })
+    },
+    methods: {
+        addDamage (val) {
+            this.damage += val;
+        }
     },
     watch: {
         item: {
