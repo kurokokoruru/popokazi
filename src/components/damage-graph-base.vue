@@ -117,7 +117,7 @@ export default {
         },
         nowPadding () {
             const result = this.perPixel * this.damage;
-            return isNaN(result) ? 0 : result;
+            return isNaN(result) ? PADDING : PADDING + result;
         },
         half () {
             return this.calcArea(this.halfRange, 8, 6);
