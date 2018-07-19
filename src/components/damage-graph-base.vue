@@ -113,7 +113,7 @@ export default {
             return {x: padding, y: PADDING, height: h, width: w};
         },
         now () {
-            return {x: PADDING, y: PADDING, height: 50, width: this.nowPadding};
+            return {x: PADDING, y: PADDING, height: 50, width: this.nowPadding - PADDING};
         },
         nowPadding () {
             const result = this.perPixel * this.damage;
