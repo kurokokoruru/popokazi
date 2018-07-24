@@ -9,10 +9,10 @@
             :damage="damage">
         </damage-graph-base>
         <div class="input-area">
-            <input class="damage-input" type="number" v-model.number="damage" pattern="\d*" @focus="$event.target.select()">
-            <div class="range-display">
+            <span class="range-display">
                 {{rangeIn}}〜{{rangeOut}}
-            </div>
+                <input class="damage-input" type="number" v-model.number="damage" pattern="\d*" @focus="$event.target.select()">
+            </span>
             <div>
               <button class="button" @click.prevent="addDamage(1)">+1</button>
               <button class="button"  @click.prevent="addDamage(5)">+5</button>
